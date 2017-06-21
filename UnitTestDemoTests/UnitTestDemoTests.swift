@@ -24,6 +24,21 @@ class UnitTestDemoTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true)
+        XCTAssertTrue(true)
+        XCTAssertFalse(false)
+        XCTAssertTrue(2 + 2 == 4, "addition goes wrong")
+        
+        XCTAssertEqual(2 + 3 , 2 + 1 + 2)
+        XCTAssertNotEqual(2 + 7 , 5 + 3 )
+        XCTAssertEqual(2 + 3 , 2 + 1 + 2,"Both objects should be equal")
+
+        var nilObj: String?
+        nilObj = nil
+        XCTAssertNil(nilObj)
+        
+        let objValue = ""
+        XCTAssertNotNil(objValue)
     }
     
     func testPerformanceExample() {
