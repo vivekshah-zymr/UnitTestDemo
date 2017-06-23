@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Mz-eD-PWx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Mz-eD-PWx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -147,24 +146,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JML-gV-mS8">
-                                <rect key="frame" x="16" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Ng1-9k-Itm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JML-gV-mS8">
+                                <rect key="frame" x="5" y="20" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hXw-UV-lZb"/>
+                                    <constraint firstAttribute="height" constant="30" id="z9T-QY-uQ2"/>
+                                </constraints>
+                                <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="didTapBack:" destination="L24-5a-7le" eventType="touchUpInside" id="sXg-l9-Rmt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ng1-9k-Itm" secondAttribute="trailing" id="FLr-Ij-3G1"/>
+                            <constraint firstItem="JML-gV-mS8" firstAttribute="leading" secondItem="f1p-sk-Dec" secondAttribute="leading" constant="5" id="Kp8-Hh-obo"/>
+                            <constraint firstItem="Ng1-9k-Itm" firstAttribute="leading" secondItem="f1p-sk-Dec" secondAttribute="leading" id="YgI-Zb-g24"/>
+                            <constraint firstItem="JML-gV-mS8" firstAttribute="top" secondItem="lJ1-SS-raP" secondAttribute="bottom" id="aob-g4-H4X"/>
+                            <constraint firstAttribute="bottom" secondItem="Ng1-9k-Itm" secondAttribute="bottom" id="qE3-RH-2gK"/>
+                            <constraint firstItem="Ng1-9k-Itm" firstAttribute="top" secondItem="f1p-sk-Dec" secondAttribute="top" id="x37-FY-Eec"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJV-2S-Gbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="38"/>
+            <point key="canvasLocation" x="725.60000000000002" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
+        <image name="bg2" width="368" height="654"/>
     </resources>
 </document>

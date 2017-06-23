@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8060C18A1EFA9C5800C52A69 /* HomeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8060C1891EFA9C5800C52A69 /* HomeVCTests.swift */; };
 		806F547F1EF8FC5D00EF8BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F547E1EF8FC5D00EF8BDD /* AppDelegate.swift */; };
 		806F54841EF8FC5D00EF8BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806F54821EF8FC5D00EF8BDD /* Main.storyboard */; };
 		806F54861EF8FC5D00EF8BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806F54851EF8FC5D00EF8BDD /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8060C1891EFA9C5800C52A69 /* HomeVCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCTests.swift; sourceTree = "<group>"; };
 		806F547B1EF8FC5D00EF8BDD /* UnitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806F547E1EF8FC5D00EF8BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806F54831EF8FC5D00EF8BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				806F54931EF8FC5D00EF8BDD /* UnitTestDemoTests.swift */,
+				8060C1891EFA9C5800C52A69 /* HomeVCTests.swift */,
 				806F54A01EF9225900EF8BDD /* MainVCTests.swift */,
 				806F54951EF8FC5D00EF8BDD /* Info.plist */,
 			);
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8060C18A1EFA9C5800C52A69 /* HomeVCTests.swift in Sources */,
 				806F54A11EF9225900EF8BDD /* MainVCTests.swift in Sources */,
 				806F54941EF8FC5D00EF8BDD /* UnitTestDemoTests.swift in Sources */,
 			);
@@ -373,7 +377,7 @@
 				INFOPLIST_FILE = UnitTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zymr.UnitTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zios.UnitTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -387,7 +391,7 @@
 				INFOPLIST_FILE = UnitTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zymr.UnitTestDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zios.UnitTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
